@@ -1,0 +1,98 @@
+.main-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .left-side {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    .right-side {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        gap: 10px;
+
+        .vertical-line {
+            height: 30px;
+            border-left: 1px solid black;
+        }
+
+        .language-container {
+            select {
+                height: 30px;
+                width: 100px;
+            }
+        }
+
+        .picture-container {
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            border: 0.1em solid black;
+            height: 27px;
+            width: 55px;
+
+            .wrapper {
+                height: 100%;
+                width: 90%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                gap: 4px;
+                background-color: #bdbbb7;
+                cursor: pointer;
+
+                img {
+                    height: 80%;
+                    filter: invert(98%) sepia(4%) saturate(207%) hue-rotate(4deg) brightness(95%) contrast(83%);
+                }
+            }
+        }
+
+        .login-container {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            height: 25px;
+            width: 80px;
+            cursor: pointer;
+            margin-left: -3%;
+            margin-right: 0%;
+
+            img {
+                height: 90%;
+                width: 40px; 
+            }
+
+            p {
+                color: black;
+                font-weight: bold;
+                margin-left: -7%;
+            }
+        }
+
+        .register-container {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            height: 25px;
+            width: 80px;
+            cursor: pointer;
+            margin-left: -1.5%;
+
+            img {
+                height: 70%;
+                width: 30px;
+            }
+
+            p {
+                color: black;
+                font-weight: bold;
+                margin-left: 2%;
+            }
+        }
+    }
+}
